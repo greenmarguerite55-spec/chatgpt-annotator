@@ -1,0 +1,135 @@
+﻿:root {
+  color-scheme: light;
+  --text: #102033;
+  --muted: #5b6576;
+  --surface: #f7f9fc;
+  --surface-strong: #ffffff;
+  --line: rgba(15, 23, 42, 0.12);
+  --accent: #1d4ed8;
+}
+
+body {
+  margin: 0;
+  min-width: 340px;
+  background: linear-gradient(180deg, #f4f7fb 0%, #eef3f8 100%);
+  color: var(--text);
+  font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+.popup-shell {
+  padding: 16px;
+  display: grid;
+  gap: 14px;
+}
+
+.hero,
+.export-panel,
+.stat-card {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.hero,
+.export-panel {
+  padding: 14px;
+}
+
+.eyebrow {
+  margin: 0 0 4px;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.hero h1,
+.panel-head h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.status,
+.panel-copy {
+  margin: 8px 0 0;
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.stat-card {
+  padding: 12px;
+}
+
+.stat-label {
+  display: block;
+  font-size: 11px;
+  line-height: 1.35;
+  color: var(--muted);
+}
+
+.stat-value {
+  display: block;
+  margin-top: 8px;
+  font-size: 22px;
+}
+
+.format-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.format-pill {
+  position: relative;
+  flex: 1;
+  cursor: pointer;
+}
+
+.format-pill input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+}
+
+.format-pill span {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.format-pill input:checked + span {
+  border-color: rgba(29, 78, 216, 0.35);
+  background: rgba(29, 78, 216, 0.1);
+  color: var(--accent);
+}
+
+.export-button {
+  margin-top: 14px;
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  background: #172033;
+  color: #fff;
+  padding: 11px 14px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.export-button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}

@@ -1,0 +1,55 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ChatGPT Color Annotator</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="popup-shell">
+    <section class="hero">
+      <p class="eyebrow">ChatGPT Color Annotator</p>
+      <h1>Conversation exports</h1>
+      <p id="page-status" class="status">Loading current page…</p>
+    </section>
+
+    <section class="stats">
+      <article class="stat-card">
+        <span class="stat-label">Annotated chats</span>
+        <strong id="annotated-chats" class="stat-value">--</strong>
+      </article>
+      <article class="stat-card">
+        <span class="stat-label">Notes in this chat</span>
+        <strong id="note-count" class="stat-value">--</strong>
+      </article>
+      <article class="stat-card">
+        <span class="stat-label">Rounds in this chat</span>
+        <strong id="round-count" class="stat-value">--</strong>
+      </article>
+    </section>
+
+    <section class="export-panel">
+      <div class="panel-head">
+        <h2>Export current conversation</h2>
+        <p id="export-hint" class="panel-copy">Choose a format to export all notes from the active ChatGPT conversation.</p>
+      </div>
+
+      <div class="format-row" role="radiogroup" aria-label="Export format">
+        <label class="format-pill">
+          <input type="radio" name="format" value="md" checked>
+          <span>Markdown</span>
+        </label>
+        <label class="format-pill">
+          <input type="radio" name="format" value="json">
+          <span>JSON</span>
+        </label>
+      </div>
+
+      <button id="export-button" class="export-button" type="button">Export all notes</button>
+    </section>
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>
