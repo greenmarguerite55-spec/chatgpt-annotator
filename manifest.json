@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "ChatGPT Color Annotator",
+  "name": "ChatGPT annotator",
   "description": "Highlight and annotate ChatGPT conversations with overlapping notes, exports, and a clickable side rail.",
   "version": "1.2.0",
   "permissions": [
@@ -12,7 +12,7 @@
     "https://chat.openai.com/*"
   ],
   "action": {
-    "default_title": "ChatGPT Color Annotator",
+    "default_title": "ChatGPT annotator",
     "default_popup": "popup.html",
     "default_icon": {
       "16": "icons/icon16.png",

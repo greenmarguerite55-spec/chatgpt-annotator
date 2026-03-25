@@ -1,4 +1,4 @@
-﻿# ChatGPT Color Annotator
+# ChatGPT annotator
 
 A browser extension for annotating ChatGPT web conversations with highlights, titles, notes, markers, and exports.
 
