@@ -4,19 +4,38 @@ A browser extension for annotating ChatGPT web conversations with highlights, ti
 
 ## What This Extension Can Do
 
+- Quickly view, edit, and navigate annotations
 - Highlight text in ChatGPT conversations
 - Add both `Title` and `Note` to each annotation
-- Support multiple highlight colors
-- Support repeated annotations on the same text
+- Support multiple highlight colors and overlapping highlights
 - Support overlapping and intersecting annotations
-- Open an annotation card by clicking a highlight or the marker on the right rail
-- Switch between multiple annotations when several notes overlap in the same area
-- Edit an existing annotation in place without deleting it first
-- Drag the confirmation prompt, editor panel, and annotation card
-- Export a single annotation as Markdown
-- Export all annotations in the current conversation from the browser extension popup
-- Export the full conversation annotations as either Markdown or JSON
-- Save data in browser local storage and restore it after refresh
+- Export annotations (single or full conversation) as either Markdown or JSON
+
+## Screenshots
+
+### Add Annotation Prompt
+
+![Add annotation prompt](./add-annotation-prompt.png)
+
+### Annotation Color Picker
+
+![Annotation color picker](./annotation-color-picker.png)
+
+### Annotation Editor
+
+![Annotation editor](./annotation-editor.png)
+
+### Annotation Card
+
+![Annotation card](./annotation-card.png)
+
+### Conversation Export Popup
+
+![Conversation export popup](./conversation-export-popup.png)
+
+### Markdown Export Output
+
+![Markdown export output](./markdown-export-output.png)
 
 ## Who It Is For
 
@@ -73,37 +92,6 @@ Full conversation export:
   - `Markdown`
   - `JSON`
 - Export all annotations from the current conversation.
-
-## Interface Overview
-
-### Confirmation Prompt
-
-- Appears after left-selecting text
-- Used to confirm whether you want to continue into annotation editing
-
-### Annotation Editor
-
-- Used to edit title, note, and color
-- Draggable
-- Shows all available colors directly in the full editor
-
-### Annotation Card
-
-- Shows title, highlighted text, and note
-- Supports edit, single export, and delete
-- Draggable
-
-### Right-Side Markers
-
-- One marker per annotation
-- Positioned by relative location in the current conversation
-- Rebalanced when the conversation becomes longer
-- Fixed when the conversation length does not change
-
-### Browser Extension Popup
-
-- Opened from the Chrome/Edge toolbar icon
-- Used for global stats and full conversation export
 
 ## Installation
 
